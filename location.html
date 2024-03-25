@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Location Finder</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./styleloco.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="container">
+            <h1>Find My Location </h1>
+
+            <button id="findLocation" onclick="initMap()">Find My Location</button>
+
+            <div class="location-container" style="display: none;">
+                <div id="map"></div>
+                <div id="address"></div>
+                <button onclick="location.reload()">Locate Again</button>
+                <a href="index.html"><button>Back To Home</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>   
+</body>
+</html>
